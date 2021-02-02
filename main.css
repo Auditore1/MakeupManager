@@ -3,14 +3,14 @@
     padding: 0;
 }
 .upbar{
-    background: #f881e8c2;
+    background: rgba(248, 107, 185, 0.288);
     width: auto;
     text-align: center;
     top: 0;
     bottom: 0;
     height: 30px;
     border-radius: 10px;
-    opacity: 0.3;
+    
 }
 .imgban{
     width: 100%;
@@ -30,8 +30,7 @@
     background-size: cover;
     height: 25em;
     color: #ffffff;
-    
-    
+z-index: 0;
 }
 .content{
     text-align: center;
@@ -92,4 +91,33 @@ article img{
     max-width: 50%;
     transform: translate(50%,0);
     border-radius: 50%;
+}
+.menu ul{
+    position: absolute;
+    list-style: none;
+    color:white;
+    background-color: black;
+    float: left;
+    z-index: 1;
+    opacity: 1;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    height: 50%;
+    opacity: 0;
+}
+.menu li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border: 2px;
+    border-style: groove;
+    border-radius: 20px;
+    
+}
+.menu i{
+    float: left;
+    margin-left: 10px;
+    font-size: 25px;
 }
