@@ -110,3 +110,29 @@ article img{
     margin-left: 10px;
     font-size: 25px;
 }
+.ula li{
+	display: block;
+	z-index: -1;
+	width: 40px;
+	height: 40p x;
+	border: 2px;
+	border-radius: 20px;	
+	list-style: none;
+	position: absolute;
+	opacity: 0.9;
+    animation: animat 5s infinite alternate;
+    
+}
+@keyframes animat{
+	from{
+		background-color: rgb(255, 94, 242); 		
+		opacity: 0.2;
+		transform: translateY(0px) rotate(0); 
+
+		}to{
+		background-color:rgba(255, 177, 245, 0.527); 		
+
+		transform: translateY(-3500px)rotate(960deg); 
+			opacity: 1;
+		}
+}
