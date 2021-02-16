@@ -12,23 +12,8 @@
     <script src='main.js'></script>
 </head>
 <body>
- <!--
-<header class="upbar">
-    <div class="menu">
-        <i class="fas fa-bars"></i>
-        <nav>
-		<ul>
-			<li>perfil</li>
-			<li>Feed</li>
-			<li>Chat</li>
-			<li>Meus Agendamentos</li>
-		</ul>
-    </nav>
-	</div>
-</header>
-menu de teste ;v
--->    
-<div class="navbar-fixed">
+<!--MENU-->   
+<div class="navbar-fixed ">
     <nav>
       <div class="nav-wrapper pink lighten-3">
         <a href="#!" class="brand-logo">Logo</a>
@@ -37,19 +22,40 @@ menu de teste ;v
           <li><a href="badges.html">Contato</a></li>
         </ul>
         <ul class="hide-on-med-and-up menumob">
-            <li><i class=" fas fa-bars waves-effect waves-light"></i></li>
-        </ul>
+            <li><i data-target="slide-out" class="sidenav-trigger fas fa-bars waves-effect waves-light"></i></li>
+          </ul>
       </div>
     </nav>
   </div>
-  
+  <!--MENU DESLIZANTE PRA MOBILE-->
+  <ul class="sidenav" id="slide-out">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="img/backmak.jpg">
+      </div> 
+      <a href="#user"><img class="circle" src="img/Andyy2.png"></a>
+      <a href="#name"><span class="white-text name">Andressa Almeida</span></a>
+      <a href="#instagram"><span class="white-text email">@andressaalmeidapro</span>
+      <a href="#!"><span class="white-text email">andressaalmeidapro@gmail.com</span></a>
+      </div>
+  </li>
+    <li><a href="#modalDev" class="modal-trigger sidenav-close">Fazer Agendamento</a></li>
+    <li><a href="#modalDev" class="modal-trigger sidenav-close">Contato</a></li>
+</ul>
   <!--AQUI COMEÇA O CONTEUDO :V -->
+
+<div class="banner">
+  <div class="background">
   <img class="responsive-img" src= "img/10corte.jpg" alt="Makeup">
-  <div class="content container">
+
+</div>
+
+</div>
+  <div class="content  hoverable col s12 hide-on-med-and-up">
       <img src="img/andy.png" align="left"/>
-      <h2 class="titulo-centralizado">Sobre o AndyStudio</h2>
+      <h1 class="flow-text header">Sobre o AndyStudio</h2>
       
-      <p>Localizada no coração da cidade o Studio Essência traz para o mercado o que há de melhor.
+      <p class="">Localizada no coração da cidade o Studio Essência traz para o mercado o que há de melhor.
           Fundada em 2019, o Studio Essência já é destaque na cidade e conquista novos clientes a cada dia.</p>
           
           <p id="missao"><em><strong>Nossa missão é:</strong></em> "Proporcionar auto-estima e qualidade de vida aos
@@ -60,7 +66,39 @@ menu de teste ;v
                 clientes.
             </p>
         </div>
-        <div class="divider"></div>      
+        <div class="divider"></div>
+        <!--Cartao visita :v -->
+        <div class="row hide-on-med-and-down">
+        
+          <div class="col s12 m12">
+            <h2 class="header">Maquiagem Profisional de Qualidade</h2>
+            <div class="card horizontal small">
+              <div class="card-image">
+                <img src="img/Andyy.png">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content hoverable">
+                  <h2 class="flow-text">Sobre o AndyStudio</h2>
+      
+                  <p>Localizada no coração da cidade o Studio Essência traz para o mercado o que há de melhor.
+                      Fundada em 2019, o Studio Essência já é destaque na cidade e conquista novos clientes a cada dia.</p>
+                      
+                      <p id="missao"><em><strong>Nossa missão é:</strong></em> "Proporcionar auto-estima e qualidade de vida aos
+                        clientes".</p>
+                        
+                        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda.
+                            O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos
+                            clientes.
+                        </p>
+                </div>
+                <div class="card-action">
+                  <a href="#">Gostaria de ver meus trabalhos? clique aqui</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+        
 <!--Slider Estilizado para mobile (Fazer Med e Desktop)-->
         <div class=" hide-on-med-and-up">
           <div class="row sl">
@@ -69,7 +107,69 @@ menu de teste ;v
             <div class="center" id="imgsl"></div>
           </div>
         </div>
+  <!--SETOR DE DIVULGAÇAO DE PACOTE-->
+  <div class="promos">
+    <div class="row pomoR">
+          <div class="col s12 m6 l4 hoverable cpromo">
+              <header class="headerpromo center">Maquiagem Artistica</header>
+              <div class="bodypromo">
+                <img class="circle" src="img/sl/AndyCL4.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae 
+                    voluptates voluptatibus numquam vel libero fugit perferendis molestias quidem ullam!</p>
+                  </div>
+                  <footer class="footerpromo">
+                      <p>Price: <a href="">$20.99</a></p>
+                  </footer>
+          </div>
+              <!--2-->
+          <div class="col s12 m6 l4 hoverable cpromo">
+            <header class="headerpromo center">Maquiagem Seila2</header>
+            <div class="bodypromo">
+              <img class="circle" src="img/sl/AndyCL3.png" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae 
+                  voluptates voluptatibus numquam vel libero fugit perferendis molestias quidem ullam!</p>
+                </div>
+                <footer class="footerpromo">
+                    <p>Price: <a href="">$120.99</a></p>
+                </footer>
+        </div>
+          <!--3-->
+        <div class="col s12 m6 l4 hoverable cpromo">
+          <header class="headerpromo center">Maquiagem Seila3</header>
+          <div class="bodypromo">
+            <img class="circle" src="img/sl/AndyCL1.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae 
+                voluptates voluptatibus numquam vel libero fugit perferendis molestias quidem ullam!</p>
+              </div>
+              <footer class="footerpromo">
+                  <p>Price: <a href="">$10020.99</a></p>
+              </footer>
+      </div>
       
+    </div>
+
+</div>
+        <div class="container">
+        <ul class="collapsible popout">
+          <li>
+            <div class="collapsible-header"><i class="fas fa-map-marker-alt"></i>Área de Atendimento</div>
+            <div class="collapsible-body container">
+              <span class="">Maiobao onde tudo é do bom rua dos drogados beco 4:20, n 5</span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="far fa-comment-dots"></i>contatos</div>
+            <div class="collapsible-body container">
+              <span class="">Para uma conversa mais aberta para negociações entre em contato</span>
+              <ul>
+                <li><span>meucu@gmail.com</span></li>
+              <li><span>  40028922</span></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
 <ul class="ula">
 			
 </ul>
@@ -96,8 +196,8 @@ menu de teste ;v
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Agendamento</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">link 2</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
           </ul>

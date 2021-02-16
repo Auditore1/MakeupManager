@@ -24,15 +24,15 @@ function addback(foto){
   for (let i = 0; i < 20; i++){
            const li = document.createElement("li");
            //const random = (min,max) => Math.random()*(max - min) + min;
-           const size = Math.floor(Math.random() * (90 - 10) ) + 10;;
-           const position = Math.random()*(70 - 1) + 1;
+           const size = Math.floor(Math.random() * (120 - 10) ) + 10;;
+           const position = Math.random()*(60 - 20) + 20;
            li.style.width = size+'px';
            li.style.height = size+'px';
            li.style.bottom = '-10000';
            li.style.left = position+'%';
            li.style.opacity = Math.random() * (0.2 - 0.1)+0.1;
-           li.style.animationDelay = getRandomInt(5,30)+'s';
-           li.style.animationDuration = getRandomInt(20, 60)+'s';
+           li.style.animationDelay = getRandomInt(1,5)+'s';
+           li.style.animationDuration = getRandomInt(10, 60)+'s';
            li.style.borderRadius = "50%";
           li.style.backgroundImage = "URL(img/sl/AndyCL"+getRandomInt(1,7)+".png)";
           li.style.backgroundSize = "cover";
@@ -40,6 +40,15 @@ function addback(foto){
            quadro.appendChild(li);
   }
   }
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var insts = M.Sidenav.init(elems,{
+      inDuration: 1500,
+      edge: 'left',
+      outDuration:1000,
+      preventScrolling: false
+    });
+  });
   document.addEventListener("DOMContentLoaded", setfilho);
   document.addEventListener("DOMContentLoaded",resetimg);
  function resetimg(){
@@ -48,3 +57,10 @@ function addback(foto){
     img.style.backgroundImage = "URL(img/sl/AndyCL"+getRandomInt(1,7)+".png)";
     setTimeout(resetimg, 5000)
   }
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems,{
+      inDuration:1000,
+      outDuration:500
+    });
+  });
