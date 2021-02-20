@@ -55,7 +55,7 @@ function addback(foto){
     // img/sl/name.tipo
     img = document.getElementById("imgsl");
     img.style.backgroundImage = "URL(img/sl/AndyCL"+getRandomInt(1,7)+".png)";
-    setTimeout(resetimg, 5000)
+    setTimeout(resetimg, 3500)
   }
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
